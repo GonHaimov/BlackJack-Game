@@ -5,7 +5,6 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
 </head>
 <body>
     <h1>Black Jack</h1>
@@ -13,16 +12,18 @@
     <p id="cards-el">Cards:</p>
     <p id="sum-el">Sum:</p>
 
-    <button onclick="startGame()">START GAME</button>
+    <button id="start-btn">START GAME</button>
     <br>
-    <button onclick="newCard()">NEW CARD</button>
+    <button id="newCard-btn">NEW CARD</button>
     <br><br>
     <button id="tenDollars">$10</button>
     <button id="fiftyDollars">$50</button>
     <button id="hundredDollars">$100</button>
     <p id="player-el"></p>
     <p id="total-bet"></p>
-    <button id="clear-bet" onclick="clearBet()">CLEAR BET</button>
+    <button id="clear-bet">CLEAR BET</button>
+
+    <script type="module" src="./js/main.js"></script>
 
 </body>
 </html>
